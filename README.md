@@ -17,7 +17,7 @@ Permite digitar SAIR para encerrar o programa.
 
 Requisitos
 
-Para rodar este programa, você precisa ter:
+
 
 Python 3 instalado no Termux ou PC.
 
