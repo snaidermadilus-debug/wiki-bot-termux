@@ -34,7 +34,7 @@ Como usar
 
 1. Clone ou baixe este repositório:
 
-git clone https://github.com/SEU_USUARIO/wiki-bot-termux.git
+git@github.com:snaidermadilus-debug/wiki-bot-termux.git
 
 
 2. Entre na pasta do projeto:
