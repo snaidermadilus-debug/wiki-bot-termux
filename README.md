@@ -69,3 +69,5 @@ Funciona melhor no Termux por causa da integração com o TTS (termux-tts-speak)
 Caso a pergunta seja ambígua, ele sugerirá algumas opções.
 
 Se não encontrar resultados, ele avisará.
+
+https://github.com/snaidermadilus-debug/nome-do-repositorio
