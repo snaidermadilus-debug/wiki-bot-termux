@@ -18,7 +18,7 @@ O bot também lê as respostas em voz alta usando o **Termux:API**.
 
 ![Demo do Wiki Bot no Termux](link-do-seu-gif-aqui.gif)  
 
-> Substitua `link-do-seu-gif-aqui.gif` pelo link do GIF que você gerar e hospedar, por exemplo no **Giphy**, **Imgur** ou **GitHub**.
+> `link-do-https://imgur.com/a/4vI80Y6
 
 ---
 
