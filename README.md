@@ -20,3 +20,24 @@ Cole esta linha no **Termux** para instalar tudo e rodar o bot:
 
 ```bash
 pkg update && pkg upgrade -y && pkg install git python termux-api -y && pip install wikipedia && git clone https://github.com/snaidermadilus-debug/wiki-bot-termux.git && cd wiki-bot-termux && python wiki_bot.py
+
+____________________________________________________________
+____________________________________________________________
+
+pkg update && pkg upgrade -y
+
+pkg install git python termux-api -y
+
+pip install wikipedia
+
+pip install wikipedia
+
+depois clonar o repositório
+
+git clone https://github.com/snaidermadilus-debug/wiki-bot-termux.git
+cd wiki-bot-termux
+
+execute o bot
+
+python wiki_bot.py
+
