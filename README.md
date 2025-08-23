@@ -19,7 +19,8 @@ O bot também lê as respostas em voz alta usando o **Termux:API**.
 ![Demo do Wiki Bot no Termux](link-do-seu-gif-aqui.gif)  
 
 > `link-do-https://imgur.com/a/4vI80Y6
-
+   
+    link: https://www.instagram.com/gg__snaider?igsh=N3VkY3o4eWhqd3h4
 ---
 
 ## 📥 Instalação Rápida (Linha Única)
