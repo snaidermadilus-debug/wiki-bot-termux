@@ -1,7 +1,7 @@
- import wikipedia
+import wikipedia
 import os
 
-wikipedia.set_lang("pt")  # Português
+wikipedia.set_lang("pt")  # Define a língua para português
 
 def pesquisar_wikipedia():
     while True:
@@ -13,23 +13,21 @@ def pesquisar_wikipedia():
             break
 
         try:
-            # Resumo curto
-            resumo_curto = wikipedia.summary(pergunta, sentences=3, auto_suggest=True, redirect=True)
+            # Resumo curto (3 frases)
+            resumo_curto = wikipedia.summary(pergunta, sentences=3)
             print("\nResposta do Wikipédia (curta):")
             print(resumo_curto)
             os.system(f'termux-tts-speak "{resumo_curto}"')
 
-            # Perguntar se quer versão longa
-            opcao = input("\nQuer ouvir a versão longa? (s/n) ").strip().lower()
-            if opcao == "s":
-                resumo_longo = wikipedia.summary(pergunta, sentences=15, auto_suggest=True, redirect=True)
-                if resumo_longo != resumo_curto:  # evita repetir
-                    print("\nVersão longa:")
-                    print(resumo_longo)
-                    os.system(f'termux-tts-speak "{resumo_longo}"')
-                else:
-                    print("\nA versão longa é igual à curta.")
-                    os.system('termux-tts-speak "A versão longa é igual à curta."')
+            # Pergunta se quer a versão longa
+            opcao = input("\nQuer ouvir a versão longa? (sim/não) ").strip().lower()
+            if opcao == "sim":
+                resumo_longo = wikipedia.summary(pergunta, sentences=10)  # Mais detalhado
+                print("\nVersão longa:")
+                print(resumo_longo)
+                os.system(f'termux-tts-speak "{resumo_longo}"')
+            else:
+                print("Continuando para a próxima pergunta...\n")
 
         except wikipedia.exceptions.DisambiguationError as e:
             print("\nSua pergunta pode se referir a várias coisas. Seja mais específico!")
@@ -39,11 +37,5 @@ def pesquisar_wikipedia():
         except wikipedia.exceptions.PageError:
             print("\nNão encontrei nada no Wikipédia sobre isso.")
             os.system('termux-tts-speak "Não encontrei nada no Wikipédia sobre isso."')
-
-            resultados = wikipedia.search(pergunta)
-            if resultados:
-                print("Talvez você esteja procurando por:")
-                for item in resultados[:5]:
-                    print("-", item)
 
 pesquisar_wikipedia()
