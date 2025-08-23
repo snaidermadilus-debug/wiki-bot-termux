@@ -80,7 +80,7 @@ Encerrando o programa. Até mais!
 
 🌐 Siga-me nas redes sociais
 
-Instagram: @gg__snaider
+Instagram: https://www.instagram.com/gg__snaider?igsh=N3VkY3o4eWhqd3h4
 
 
 🔗 Links Úteis
